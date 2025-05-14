@@ -1,4 +1,7 @@
-def marcar_favorito(agenda, index_contato):
+from listar_agenda import listar_agenda
+def marcar_favorito(agenda):
+    listar_agenda(agenda)
+    index_contato = int(input("Digite o número do contato que deseja marcar como favorito: "))
     if index_contato < 1 or index_contato > len(agenda):
         print("Número do contato inválido.")
         return
