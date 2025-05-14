@@ -18,24 +18,16 @@ while True:
         entrada = input("Escolha uma opção: ").strip()
         opcao_menu = int(entrada)
         if opcao_menu == 1:
-            nome_contato = input("Digite o nome do novo contato: ")
-            telefone_contato = input("Digite o telefone do novo contato: ")
-            email_contato = input("Digite o email do novo contato: ")
-            adicionar_contato(agenda, nome_contato, telefone_contato, email_contato)
+           
+            adicionar_contato(agenda)
         elif opcao_menu == 2:
             listar_agenda(agenda)
         elif opcao_menu == 3:
-            listar_agenda(agenda)
-            index_contato = int(input("Digite o número do contato que deseja atualizar: "))
-            atualizar_contato(agenda, index_contato)
+            atualizar_contato(agenda)
         elif opcao_menu == 4:
-            listar_agenda(agenda)
-            index_contato = int(input("Digite o número do contato que deseja marcar como favorito: "))
-            marcar_favorito(agenda, index_contato)
+            marcar_favorito(agenda)
         elif opcao_menu == 5:
-            listar_agenda(agenda)
-            index_contato = int(input("Digite o número do contato que deseja deletar: "))
-            deletar_contato(agenda, index_contato)
+            deletar_contato(agenda)
         elif opcao_menu == 6:
             print("Saindo do programa...")
             break
